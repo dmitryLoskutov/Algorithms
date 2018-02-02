@@ -1,0 +1,24 @@
+{
+  "name": "algorithms",
+  "version": "1.0.0",
+  "description": "training alorithms on js",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmitryLoskutov/Algorithms.git"
+  },
+  "author": "Loskutov Dmitry",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dmitryLoskutov/Algorithms/issues"
+  },
+  "homepage": "https://github.com/dmitryLoskutov/Algorithms#readme",
+  "devDependencies": {
+    "eslint": "^4.9.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.7.0"
+  }
+}

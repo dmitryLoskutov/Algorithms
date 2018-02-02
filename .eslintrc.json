@@ -1,0 +1,103 @@
+{
+	"extends":  "airbnb-base",
+	"rules": {
+		"POSSIBLE ERRORS": ["off", "http://eslint.org/docs/rules/#possible-errors"],
+		"no-console": "off",
+		"no-constant-condition": "error",
+		"no-control-regex": "warn",
+		"no-inner-declarations": "warn",
+		"no-irregular-whitespace": ["error", {
+			"skipStrings": true,
+			"skipTemplates": true,
+			"skipRegExps": true,
+			"skipComments": true}
+		],
+
+		"STRICT MODE": ["off", "http://eslint.org/docs/rules/#strict-mode"],
+		"strict": "off",
+
+		"VARIABLES": ["off", "http://eslint.org/docs/rules/#variables"],
+		"no-catch-shadow": "error",
+		"no-restricted-globals": ["error", {
+			"name": "event",
+			"message": "Use local parameter instead."
+		}],
+		"no-unused-vars": ["error", {"args": "none"}],
+
+		"BEST PRACTICES": ["off", "http://eslint.org/docs/rules/#best-practices"],
+		"consistent-return": "warn",
+		"curly": ["error", "all"],
+		"default-case": "off",
+		"dot-notation": "warn",
+		"guard-for-in": "warn",
+		"no-empty-function": "error",
+		"no-invalid-this": "error",
+		"no-multi-spaces": ["error", {
+			"exceptions": {
+				"Property": true,
+				"VariableDeclarator": true
+			}
+		}],
+		"no-param-reassign": ["error", {"props": false}],
+		"no-restricted-properties": "off",
+		"no-unmodified-loop-condition": "error",
+		"no-useless-call": "error",
+		"no-warning-comments": "warn",
+		"require-await": "error",
+		"vars-on-top": "off",
+		"wrap-iife": ["warn", "inside"],
+
+		"STYLISTIC ISSUES": ["off", "http://eslint.org/docs/rules/#stylistic-issues"],
+		"array-bracket-spacing": ["error", "never"],
+		"array-element-newline": "off",
+		"comma-dangle": ["error", "never"],
+		"consistent-this": ["error", "me"],
+		"func-names": "off",
+		"function-paren-newline": "off",
+		"implicit-arrow-linebreak": "off",
+		"indent": ["error", "tab", {"SwitchCase": 1}],
+		"max-len": ["error", 160, {"ignoreComments": true}],
+		"no-bitwise": "warn",
+		"no-continue": "off",
+		"no-mixed-operators": "error",
+		"no-nested-ternary": "off",
+		"no-plusplus": "off",
+		"no-restricted-syntax": "off",
+		"no-tabs": "off",
+		"no-unneeded-ternary": "error",
+		"nonblock-statement-body-position": ["error", "below"],
+		"object-curly-newline": ["error", {"multiline": true}],
+		"object-curly-spacing" :["error", "never"],
+		"one-var": "off",
+		"one-var-declaration-per-line": "off",
+		"padded-blocks": "off",
+		"padding-line-between-statements": "off",
+		"quote-props": ["error", "as-needed"],
+		"spaced-comment": ["error", "always", {
+			"line": {"exceptions": ["-"]},
+			"block": {"balanced": true}
+		}],
+		"unicode-bom": ["warn", "never"],
+
+		"ECMAScript 6": ["off", "http://eslint.org/docs/rules/#ecmascript-6"],
+		"generator-star-spacing": ["error", "after"],
+		"no-confusing-arrow": "off",
+		"no-duplicate-imports": "warn",
+		"no-useless-constructor": "warn",
+		"no-useless-rename": "warn",
+		"object-shorthand": "off",
+		"prefer-arrow-callback": "off",
+		"prefer-destructuring": "off",
+		"prefer-numeric-literals": "off",
+		"prefer-rest-params": "off",
+		"prefer-spread": "off",
+		"prefer-template": "off",
+
+		"TO DO": ["off", "The rules to be enabled later"],
+		"no-undef": "off",
+        "eqeqeq": "off",
+
+        "no-unused-expressions": ["error", { "allowShortCircuit": true }]
+
+	}
+}
