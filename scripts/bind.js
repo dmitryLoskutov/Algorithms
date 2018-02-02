@@ -1,22 +1,15 @@
-function bindingAlg() {
+const funObj = {
+	fibonacci: fibonacci,
+	euclid: euclid
+};
 
-	const funObj = {
-		fibonacci: fibonacci,
-		euclid: euclid
-	};
+const formControl = document.querySelector('#inCntrl');
+let currentSelection;
 
-	const formControl = document.querySelector('#inCntrl').value;
-	let result = 0;
+document.querySelector('#algorithms').addEventListener('click', function (evt) {
+	currentSelection = evt.target.value;
+});
 
-	document.querySelector('#algorithms').addEventListener('click', function (elem) {
-
-		result = funObj[elem.target.id](formControl.value);
-	});
-
-	document.getElementById('submit').onclick = function () {
-		document.getElementById('outCntrl').value = result.value;
-	};
-
-
-}
-
+document.getElementById('submit').addEventListener('click', function (evt) {
+	document.getElementById('outCntrl').value = funObj[currentSelection](formControl.value);
+});
