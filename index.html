@@ -15,29 +15,23 @@
             <option value="">Select algorithm</option>
             <option value="fibonacci">Fibonacci</option>
             <option value="euclid">Euclid</option>
-            <option value="smth">Something else</option>
+            <option value="knapsack">KnapSack</option>
         </select>
             
     </div>
 
     <div class="algapp">         
-                    <div class="form-group">
-                        <label>Введите данные</label>  
-                    </div>
                     <div class="datainput">                 
-                            <input  type="text" class="form-control" id="inCntrl"  placeholder="Входные данные">  
-                    </div>                  
-                    
-                    <div class="form-group">
-                        <label >Результат вычислений</label>                    
-                    </div>
+                            <label>Введите данные<input title="" type="text" class="form-control" id="inCntrl"  placeholder="Входные данные"></label> 
+                    </div>              
                     <div class="dataout">
-                     <input type="text" class="form-control" id="outCntrl" >                     
-                    </div>
-                    <div class="form-group">               
-                      <button type="button" class="btn btn-success" id="submit">Отправить</button>
-                    </div>  
+                     <label>Результат вычислений<input type="text" class="form-control" id="outCntrl" ></label>                     
+                    </div>                
     </div>
+    <div class="form-group">               
+        <button type="button" class="btn btn-success" id="submit">Отправить</button>
+      </div> 
+    <script src="./scripts/KnapSack.js"></script>
     <script src="./scripts/Euclid.js"></script>
     <script src="./scripts/Fibonacci.js"></script>
     <script src="./scripts/bind.js"></script>
