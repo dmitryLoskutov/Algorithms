@@ -7,22 +7,22 @@ class Item {
 	}
 }
 
-function compare(fstNumber, scdNumber) {
-	const fstResult = fstNumber[0][0] / fstNumber[0][1];
-	const scdResult = scdNumber[0][0] / scdNumber[0][1];
-	if (fstResult >= scdResult) {
-		return fstResult;
+function compare(firstNumber, secondNumber) {
+	const firstResult = firstNumber[0][0] / firstNumber[0][1];
+	const secondResult = secondNumber[0][0] / secondNumber[0][1];
+	if (firstResult >= secondResult) {
+		return firstResult;
 	}
-	return scdResult;
+	return secondResult;
 }
 
-function knapsack(array) {
+function knapsack(arrayOfValueWeight) {
 
-	const capasity = array[0][0];
-	let helt = array[0][1];
-	let items = new Item();
+	const capasity = arrayOfValueWeight[0][0];
+	let helt = arrayOfValueWeight[0][1];
+	let items = [];
 	for (let i = 0; i < capasity - 1; i++) {
-		items[i] = new Item(array[i + 1][0], array[i + 1][1]);
+		items.push(new Item(arrayOfValueWeight[i + 1][0], arrayOfValueWeight[i + 1][1]));
 	}
 	for (let i = 1; i < capasity; i++) {
 		items[i] = compare(items[i], items[i + 1]);
