@@ -1,7 +1,8 @@
 const funObj = {
 	fibonacci: fibonacci,
 	euclid: euclid,
-	knapsack: knapsack
+	knapsack: knapsack,
+	huffman: huffman
 };
 
 const formControl = document.querySelector('#inCntrl');
